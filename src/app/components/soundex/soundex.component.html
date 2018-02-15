@@ -1,0 +1,24 @@
+
+<div style="margin:auto;margin-top:3%; width:80%;text-align: center">
+
+<span style="color:green; font-style:italic;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:2em">
+Heyy check out the soundex code for the next thing that comes to your mind!!!!...
+</span>
+<div style="margin:auto;margin-top:2%;border-radius:5px; width: 30%;" class="form-group">
+
+
+    <input class="form-control" type="text" [(ngModel)]="soundexInput" placeholder="Enter the string.."><br/><br/>
+
+    <button class="btn btn-warning" (click)="getSoundexCode()">Hit it up!</button>
+    <button class="btn btn-warning" (click)="reset()">Reset</button>
+
+
+</div>
+
+<div *ngIf="outputString" class="alert alert-success" style="margin:auto; margin-top:2%;width:10%;">
+<span style="font-size:2em; font-style:italic;font-weight:bolder;">
+  {{outputString}}
+</span>
+</div>
+
+</div>

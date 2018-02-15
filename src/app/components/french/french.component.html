@@ -1,0 +1,25 @@
+
+<div class="alert alert-info" style="text-align:center;font-size:2em;font-weight:bolder;font-style:italic;margin:auto;margin-top:2%;width:60%;">
+  Hey I know French counting.. wanna check??? <br/>
+  <br/>
+
+</div>
+
+<div class="form-group" style="border:2px solid green;padding:2%;text-align:center;align-self: center;border-radius:20px;width:50%;margin-left:auto;margin-right:auto;margin-top:2%;">
+
+<form>
+ <input class="form-control" name="inputNumber" maxlength="3" type ="text" [(ngModel)]="inputNumber" placeholder="Enter the number..." style="border-radius:5px;margin:2%;padding:1%;font-style:italic;font-weight:bolder;"><br/><br/>
+ <button class="btn btn-success" (click)="getFrench()" >Translate!</button>&nbsp;&nbsp;
+ <button class="btn btn-success" (click)="resetInput()" >Reset!</button>
+
+ <br/>
+</form>
+
+
+
+</div>
+<div style="text-align: center;margin-top:6%;">
+  <span style="font-size:2em;font-style: italic;font-weight:bolder;align-self:center;margin-top:10%;">
+    {{outputString}}
+  </span>
+</div>

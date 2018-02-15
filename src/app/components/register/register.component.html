@@ -1,0 +1,29 @@
+<div style="border:solid 2px green;padding:2%;border-radius:10px;margin-top:5%;">
+<h2>
+      <i> Register here:  </i>
+</h2>
+
+
+<form>
+
+    <label> Name: </label>
+    <input type = "text" name="name" class="form-control" [(ngModel)]="user.name" placeholder="Enter Name..."> <br>
+
+    <label>  Email: </label>
+    <input type = "text" name="email" class="form-control"  [(ngModel)]="user.email" placeholder="Your Email..."><br>
+
+    <label>  Mobile : </label>
+    <input type = "text" name="phone" class="form-control" [(ngModel)]="user.phone" placeholder="Your Cell # ...">
+
+    <label>  Preferred Username: </label>
+    <input type = "text" name="username" class="form-control"  [(ngModel)]="user.username" placeholder="Preferred  Username..."><br>
+
+    <label>  Password: </label>
+    <input type = "password" name="password" class="form-control" [(ngModel)] = "user.password" placeholder="Shhhh... secret"><br><br>
+
+    <button (click)="register()" class="btn btn-info">SUBMIT</button><br>
+
+
+
+</form>
+</div>
